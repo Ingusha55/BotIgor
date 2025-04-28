@@ -23,12 +23,6 @@
             "dest": "public/index.html"
         }
     ],
-    "functions": {
-        "server.py": {
-            "memory": 1024,
-            "maxDuration": 30
-        }
-    },
     "env": {
         "PYTHONUNBUFFERED": "1"
     }
