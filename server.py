@@ -112,6 +112,11 @@ def set_alarm():
     print(f"Будильник установлен на {time}")
     return jsonify({'message': f'Будильник установлен на {time}'})
 
+@app.route('/api/test')
+def test():
+    print("Запрос на /api/test")
+    return jsonify({'message': 'Сервер работает!'})
+
 if __name__ == '__main__':
     print("Запуск сервера...")
     loop = asyncio.get_event_loop()
